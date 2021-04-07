@@ -1,0 +1,95 @@
+.overlay {
+    z-index: 9998;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.sidebar {
+    z-index: 9999;
+    position: fixed;
+    height: 100%;
+    max-width: 1000px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    @include sm() {
+        width: 100%;
+    }
+    @include md() {
+        width: 100%;
+    }
+
+    .close {
+        position: absolute;
+        right: 25px;
+        top: 10px;
+        z-index: 9000;
+        color: $highlight;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .sidebar_nav {
+        width: 50%;
+        position: absolute;
+        height: 100;
+        background-color: $first-color;
+        top: 0;
+        left: 0;
+        bottom: 0;
+
+        @include xs() {
+            width: 100%;
+        }
+
+        .logo {
+            display: block;
+            width: 250px;
+            margin: 25px auto;
+        }
+
+        a {
+            font-family: $headline_font;
+            color: $highlight;
+            display: block;
+            text-decoration: none;
+            text-indent: 20%;
+            font-size: 1.35em;
+            min-height: 40px;
+        }
+
+        a.active {
+            color: $second-color;
+        }
+
+        a:hover {
+            color: $third-color;
+        }
+    }
+
+    .sidebar_mood {
+        width: 50%;
+        position: absolute;
+        height: 100;
+        background-color: $background-color-dark;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        @include xs() {
+            display: none;
+        }
+    }
+
+    img {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    ul li {
+        display: block;
+    }
+}
