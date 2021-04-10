@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "jt1.rocks",
+    title: "schoettner.rocks",
     author: 'Oliver Schöttner',
     street: "Steigerwaldstr. 33",
     postal_code: "85049",
@@ -9,7 +9,8 @@ module.exports = {
     mailto: "mailto:oliver@schoettner.rocks",
     mobile: "0170 / TURBO ON",
     mobileto: "tel:+491708872666",
-    siteUrl: "https://schoettner.rocks"
+    siteUrl: "https://schoettner.rocks",
+    land: 'de',
   },
   plugins: [
     {
@@ -26,7 +27,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `JT1.rocks`,
+        name: `schoettner.rocks`,
         short_name: `JT1`,
         start_url: `/`,
         background_color: `#12355b`,
